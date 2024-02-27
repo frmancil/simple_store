@@ -1,11 +1,6 @@
 <h1>Products</h1>
 <% @products.each do |product| %>
-    <div>
-        <label>Title</label>
-        <%= product.title %>
-        <label>Price</label>
-        <%= product.price %>
-        <label>Stock</label>
-        <%= product.stock_quantity %>
-    </div>
+    <ul>
+        <%= link_to product.title, product %>
+    </ul>
 <% end %>
