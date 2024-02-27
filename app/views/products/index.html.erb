@@ -1,5 +1,8 @@
 <h1>Products</h1>
 <% @products.each do |product| %>
+    <label>
+        <%= product.category.name %>
+    </label>
     <ul>
         <%= link_to product.title, product %>
     </ul>
